@@ -27,7 +27,10 @@ Pardes is a multi-source static security analysis platform that combines large-l
 
 | Date submitted | Target | Vulnerability | Severity | Status | Entry |
 |---|---|---|---|---|---|
-| 2026-04-30 | cal.com | SSRF + OAuth credential disclosure in Zoho Calendar callback | HIGH | Pending fix | _coming after embargo_ |
+| 2026-04-30 | cal.com / cal.diy | SSRF + OAuth credential disclosure in Zoho Calendar callback | HIGH | Filed GHSA after 26-day email silence; in triage | _coming after embargo_ |
+| 2026-05-12 | Janssen jans-auth-server | SSRF (CWE-918) in `request_uri` → `AuthorizeAction.getRequestedClaims` | HIGH | Fix shipped (PR #14086); GHSA pending publication | _coming after embargo_ |
+| 2026-05-12 | Janssen jans-auth-server | Reflected XSS (CWE-79) in `EndSessionUtils.createFronthannelHtml` | HIGH | Fix shipped (PR #14103); GHSA pending publication | _coming after embargo_ |
+| 2026-05-12 | Janssen jans-auth-server | SSRF (CWE-918, DCR-gated) in `sector_identifier_uri` → `RedirectionUriService.getSectorRedirectUris` | HIGH | Fix shipped (PR #14111); GHSA pending publication | _coming after embargo_ |
 
 _(Entries are added once upstream confirms remediation and the embargo expires.)_
 

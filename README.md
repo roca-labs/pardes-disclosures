@@ -28,9 +28,9 @@ Pardes is a multi-source static security analysis platform that combines large-l
 | Date submitted | Target | Vulnerability | Severity | Status | Entry |
 |---|---|---|---|---|---|
 | 2026-04-30 | cal.com / cal.diy | SSRF + OAuth credential disclosure in Zoho Calendar callback | HIGH | Filed GHSA after 26-day email silence; in triage | _coming after embargo_ |
-| 2026-05-12 | Janssen jans-auth-server | SSRF (CWE-918) in `request_uri` → `AuthorizeAction.getRequestedClaims` | HIGH | Fix shipped (PR #14086); GHSA pending publication | _coming after embargo_ |
-| 2026-05-12 | Janssen jans-auth-server | Reflected XSS (CWE-79) in `EndSessionUtils.createFronthannelHtml` | HIGH | Fix shipped (PR #14103); GHSA pending publication | _coming after embargo_ |
-| 2026-05-12 | Janssen jans-auth-server | SSRF (CWE-918, DCR-gated) in `sector_identifier_uri` → `RedirectionUriService.getSectorRedirectUris` | HIGH | Fix shipped (PR #14111); GHSA pending publication | _coming after embargo_ |
+| 2026-05-12 | Janssen jans-auth-server | SSRF (CWE-918) in `request_uri` → `AuthorizeAction.getRequestedClaims` | MODERATE (6.5) | Published [GHSA-8gmm-83qv-w67g](https://github.com/JanssenProject/jans/security/advisories/GHSA-8gmm-83qv-w67g); fix in 2.2.0 | [entry](jans-auth-server/GHSA-8gmm-83qv-w67g-ssrf-request-uri.md) |
+| 2026-05-12 | Janssen jans-auth-server | Reflected XSS (CWE-79) in `EndSessionUtils.createFronthannelHtml` | CRITICAL (9.3) | Published [GHSA-vxgw-mxhf-2m6f](https://github.com/JanssenProject/jans/security/advisories/GHSA-vxgw-mxhf-2m6f); fix in 2.2.0 | [entry](jans-auth-server/GHSA-vxgw-mxhf-2m6f-reflected-xss-frontchannel.md) |
+| 2026-05-12 | Janssen jans-auth-server | SSRF (CWE-918, DCR-gated) in `sector_identifier_uri` → `RedirectionUriService.getSectorRedirectUris` | HIGH (7.5) | Published [GHSA-9qw4-gwgf-3q27](https://github.com/JanssenProject/jans/security/advisories/GHSA-9qw4-gwgf-3q27); fix in 2.2.0 | [entry](jans-auth-server/GHSA-9qw4-gwgf-3q27-ssrf-sector-identifier-uri.md) |
 
 _(Entries are added once upstream confirms remediation and the embargo expires.)_
 
